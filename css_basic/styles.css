@@ -1,0 +1,71 @@
+/* styles.css */
+
+/* Apply flexbox to the body */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply flexbox to the main container */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Style the header */
+header {
+    background-color: #e61717d0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the footer */
+footer {
+    background-color: #f30303dc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the article to take 2/3 of the width */
+article {
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Style the aside to take 1/3 of the width */
+aside {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #bdb8b8;
+}
+
+/* Style the links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
