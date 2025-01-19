@@ -1,1 +1,101 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf') format('SourceSansPro'),
+         url('fonts/Spin-Cycle-OT/spincycle_3d_ot.otf') format('SoinCycleOT');
+    font-weight: normal;
+    font-style: normal;
+}
 
+.main-part{
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height:60vw;
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+
+/*.header-list{
+     position: flex;
+     flex-direction: row;
+     align-items:center ;
+     list-style: none;
+}*/
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    height:30px;
+}
+
+.header-logo {
+    float: left;
+    padding: 10px 20px;
+    height: 40px;
+}
+
+.header-list {
+    display: flex; /* Use flexbox to arrange children horizontally */
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    gap: 20px; /* Optional: Add space between list items */
+}
+
+.header-list li {
+    display: flex; /* Ensure list items are flex items */
+    align-items: center; /* Center items vertically */
+    margin-right: 30px;
+   
+
+}
+.middle-pbp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 480px;
+}
+.main-p-1{
+    font-family: 'Source Sans Pro', sans-serif; /* Apply the custom font */
+    font-size: 32px;
+    font-style: bold;    
+
+}
+.main-p-2{
+    font-family: 'Source Sans Pro', sans-serif; /* Apply the custom font */
+    font-size: 16px;
+    font-style: bold;
+}
+.main-btn-div{
+    background-color: transparent;
+    border: none;
+}
+.main-btn{
+    background-color:#ff6565; /* Sets the background color to purple */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    padding: 15px 30px; /* Adds padding to the button */
+    border-radius: 30px; /* Sets the border radius to 10px */
+    font-size: 16px; /* Sets the font size */
+    /*cursor: pointer; /* Changes the cursor to a pointer on hover */
+    /*margin-top: 20px; /* Adds some space above the button */
+    /*margin-left:400px;*/ 
+    text-align: center; /* Centers the text inside the button */
+    /*display: flex; /* Ensures the button is an inline-block element */
+    /*flex-direction: column;*/
+    /*position: relative;
+    margin-bottom: 150px;*/
+    margin-top: 40px;
+}
+.main-p-3{
+    font-family: 'Source Sans Pro', sans-serif; /* Apply the custom font */
+    font-size: 16px;
+    margin-top: 80px;
+}
