@@ -34,7 +34,30 @@
 }
 .header-btn{
     display: none;
+    background-color: transparent;
+    color: white;
+    size: 12px;
+    border: none;
+    margin-top: 20px;
+
+   
+}
+.header-btn :hover{
+    .header-btn:hover {
+        /*background-color: #ff6565; /* Change background color on hover */
+        background-color: black; /* Change text color on hover */
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+    .header-btn:focus + .dropdown-content {
+        display: block;
+    }
+
+    .header-btn:active {
+        background-color: #e04e4e; /* Change background color on click */
+        color: white; /* Change text color on click */
+    }
     
+
 }
 
 .header-logo {
@@ -49,6 +72,7 @@
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     gap: 20px; /* Optional: Add space between list items */
+    color: white;
 }
 
 .header-list li {
@@ -69,13 +93,15 @@
 .main-p-1{
     font-family: 'Source Sans Pro', sans-serif; /* Apply the custom font */
     font-size: 32px;
-    font-style: bold;    
+    font-style: bold; 
+    color: white;   
 
 }
 .main-p-2{
     font-family: 'Source Sans Pro', sans-serif; /* Apply the custom font */
     font-size: 16px;
     font-style: bold;
+    color: white;
 }
 .main-btn-div{
     background-color: transparent;
@@ -102,13 +128,14 @@
     font-family: 'Source Sans Pro', sans-serif; /* Apply the custom font */
     font-size: 16px;
     margin-top: 80px;
+    color: white;
      
 }
 
 @media (max-width:786px) {
     .header{
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     justify-content: center; 
     align-items: center; 
     padding: 10px 20px;
@@ -117,10 +144,28 @@
     .header-list{
         flex-direction: column;
         gap: 10px;
+        display: none;
 
     }
     .header-logo{
         margin: 10px;
+
     }
+    
+    .header-btn{
+        display: block;
+        background-color: transparent;
+        color: white;
+        size: 12px;
+        border: none;
+        margin-top: 20px;
+    }
+    .header-btn:on-click {
+        .header-list{
+            display: flex;
+        }
+    }
+        
+    
     
 }
