@@ -11,8 +11,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
-    height:60vw;
+    /*width: 100vw;
+    height:60vw;*/
     margin: 0px;
     padding: 0px;
     
@@ -31,6 +31,10 @@
     align-items: center; 
     padding: 10px 20px;
     height:30px;
+}
+.header-btn{
+    display: none;
+    
 }
 
 .header-logo {
@@ -98,4 +102,25 @@
     font-family: 'Source Sans Pro', sans-serif; /* Apply the custom font */
     font-size: 16px;
     margin-top: 80px;
+     
+}
+
+@media (max-width:786px) {
+    .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px 20px;
+    height:30px;
+    }
+    .header-list{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .header-logo{
+        margin: 10px;
+    }
+    
 }
