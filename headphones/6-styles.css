@@ -1,0 +1,100 @@
+.our-results{
+    background-image: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+.our-results-p{
+    color: white;
+    text-align: center;
+    margin-top:02vw;
+
+}
+.four-pentagons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+.pentagon-one , .pentagon-two, .pentagon-three, .pentagon-four{
+    display: relative; /* Set the container to relative positioning */
+    column-count: 1;
+    width:100%;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+
+.pentagon {
+    position: relative;
+    width: 100px;
+    border-width: 61px 35px 0;
+    border-style: solid;
+    border-color: #00f #00f transparent;
+    transform: rotate(54deg);
+}
+
+.pentagon-shape-one, .pentagon-shape-two, .pentagon-shape-three, .pentagon-shape-four::before,
+.pentagon-shape-one, .pentagon-shape-two, .pentagon-shape-three, .pentagon-shape-four::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: #00f;
+}
+
+.pentagon-shape-one, .pentagon-shape-two, .pentagon-shape-three, .pentagon-shape-four::before {
+    top: -61px;
+    left: -35px;
+    border-width: 0 35px 61px;
+    transform: rotate(-70deg);
+}
+
+.pentagon-shape-one, .pentagon-shape-two, .pentagon-shape-three, .pentagon-shape-four::after {
+    top: -61px;
+    right: -35px;
+    border-width: 0 35px 61px;
+    transform: rotate(70deg);
+}
+
+.pentagon-one p , .pentagon-two p, .pentagon-three p, .pentagon-four p{
+    position: block; /* Set the text to absolute positioning */
+    z-index: 2; /* Set the z-index to 2 */
+    top: 10%; /* Position the text in the middle vertically */
+    left: 50%; /* Position the text in the middle horizontally */
+    /*transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Set the text color to white */
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    z-index: 2;
+    padding: 5px; /* Optional: Add padding for better readability */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    top:50% ;
+}
+@media (max-width:1024px) {
+    
+      .four-pentagons {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 20px;
+          margin-top: 40px;
+      }
+       
+  }
+
+  @media (max-width:786px) {
+      
+          .four-pentagons{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 20px;
+              margin-top: 40px;
+          }
+      }

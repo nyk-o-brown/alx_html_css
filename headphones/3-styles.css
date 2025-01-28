@@ -1,0 +1,33 @@
+.contact-us hr{
+    width: 100px;
+    margin-top: 20px;
+    color: gray;
+    
+
+}
+.call-to-action{
+    display: flex;
+    position: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.cta-btn{
+    background-color:#ff6565; /* Sets the background color to purple */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    padding: 15px 30px; /* Adds padding to the button */
+    border-radius: 30px; /* Sets the border radius to 10px */
+    font-size: 16px; /* Sets the font size */
+    /*cursor: pointer; /* Changes the cursor to a pointer on hover */
+    /*margin-top: 20px; /* Adds some space above the button */
+    /*margin-left:400px;*/ 
+    text-align: center; /* Centers the text inside the button */
+    /*display: flex; /* Ensures the button is an inline-block element */
+    /*flex-direction: column;*/
+    /*position: relative;
+    margin-bottom: 150px;*/
+    margin-top: 40px;
+    
+}
