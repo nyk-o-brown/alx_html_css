@@ -8,13 +8,15 @@
 
 .main-part{
     background-image: url(images/headphones_hero_1.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
-    /*width: 100vw;
-    height:60vw;*/
+    background-position:center;
+    background-attachment: stretch;
+    width: 100vw;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
+    display: flex;  
     
 
 }
@@ -77,8 +79,8 @@
 
 .header-list li {
     display: flex; /* Ensure list items are flex items */
-    align-items: center; /* Center items vertically */
-    margin-right: 30px;
+    align-items: right; /* Center items vertically */
+    margin-right: 50px;
    
 
 }
@@ -106,6 +108,7 @@
 .main-btn-div{
     background-color: transparent;
     border: none;
+    align-items: center;
 }
 .main-btn{
     background-color:#ff6565; /* Sets the background color to purple */
@@ -123,6 +126,7 @@
     /*position: relative;
     margin-bottom: 150px;*/
     margin-top: 40px;
+    margin-left: 50%;
 }
 .main-p-3{
     font-family: 'Source Sans Pro', sans-serif; /* Apply the custom font */
