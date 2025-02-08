@@ -27,3 +27,47 @@
     width: 200px;
 
 }
+
+/* General styles for the sections */
+.what-we-do, .our-results {
+    padding: 20px;
+    text-align: center;
+}
+
+.items-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+}
+
+/* Hover animations */
+.item:hover {
+    transform: scale(1.1) rotate(5deg); /* Scale up and rotate slightly */
+    opacity: 0.8; /* Slightly reduce opacity */
+}
+
+/* Keyframes for bouncing animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Apply bouncing animation to items */
+.item {
+    animation: bounce 2s infinite; /* Infinite bouncing animation */
+}
